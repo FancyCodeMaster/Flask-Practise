@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>Index Page</title>
+{% endblock %}
+
+{% block body %}
+    <h1>This is index.html page</h1>
+    <h4>The details are:</h4>
+    {% for item in details %}
+        <h2>Name : {{item.name}}</h2>
+        <h3>Age : {{item.age}}</h3>
+    {% endfor %}
+{% endblock %}
+
+<!--Above is the template inheritance-->
+<!--We can even send the data from python to the html page-->

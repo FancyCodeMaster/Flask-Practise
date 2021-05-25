@@ -1,0 +1,10 @@
+body {
+    color : red;
+}
+
+.post {
+    border: 3px solid #e67e22;
+    padding : 15px;
+    width : 300px;
+    margin-bottom: 15px;
+}
