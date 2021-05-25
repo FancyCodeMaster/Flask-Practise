@@ -10,23 +10,12 @@ from flask_sqlalchemy import SQLAlchemy
 # Creating object named app
 app = Flask(__name__)
 
-# data to send from app to the templates 
-data = [
-    {
-        "name" : "Rikesh Silwal",
-        "age" : "21"
-    },
-    {
-        "name" : "Sabina Bista",
-        "age" : "20"
-    }
-]
 
 # First Routing to the localhost
 @app.route("/")
 @app.route("/index")
 def initial():
-    return render_template("index.html" , details = data)
+    return render_template("index.html")
 
 
 # Configuring where our database stays
